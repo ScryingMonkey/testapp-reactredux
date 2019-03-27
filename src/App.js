@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { React,Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,7 +21,6 @@ class App extends Component {
           >
             Learn React
           </a>
-          <topbar />
         </header>
       </div>
     );
