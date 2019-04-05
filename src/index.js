@@ -3,7 +3,6 @@ import ReactDOM, {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import store from './store/index';
 import './index.css';
-// import App from './App';
 import App from './components/App.jsx'
 import * as serviceWorker from './serviceWorker';
 
@@ -11,7 +10,14 @@ import {addArticle} from './actions/index';
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" ></link>
+  </head>
+  <body>
+    <div class="container">
+      <App />
+    </div>
+  </body>
   </Provider>
   , document.getElementById('root'));
 
