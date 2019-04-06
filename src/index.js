@@ -10,14 +10,10 @@ import {addArticle} from './actions/index';
 
 ReactDOM.render(
   <Provider store={store}>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" ></link>
-  </head>
-  <body>
-    <div class="container">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <div className="container">
       <App />
     </div>
-  </body>
   </Provider>
   , document.getElementById('root'));
 
